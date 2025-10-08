@@ -2,7 +2,7 @@
 
 :root {
     --bg-dark: #1e1e29;
-    --bg-light: #2c2c34;
+    --bg-light: #3c3c4f;
     --text-color: #ffffff;
     --text-muted: #a0a0a0;
     --accent-yellow: #f9b805;
@@ -202,7 +202,7 @@ main {
 
 .card {
     background-color: var(--bg-light);
-    border-radius: 8px;
+    border-radius: 2px;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.2s;
@@ -217,10 +217,15 @@ main {
     height: 100px;
 }
 .date1{
-    background-color: #1e1e29;
-    padding: 20px;
+    background-color: #2d2d3f;
+    padding: 18px;
     margin: 0 20px;
-    
+    border-radius: 15px;
+    text-align: center;
+}
+.date1 h4, p{
+    font-size: 1.3rem;
+    color: #f7c12c;
 }
 
 .card img {
