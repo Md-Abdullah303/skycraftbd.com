@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jartex Network</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="nav-center">
+                <a class="nav-btn" href="#">HOME</a>
+                <a class="nav-btn" href="#">RULES</a>
+                <a class="nav-btn" href="#">VOTE</a>
+                <a class="nav-btn store-btn" href="#" style="margin: 0 3px;">STORE</a>
+                <a class="nav-btn" href="#">TEAM</a>
+                <a class="nav-btn" href="#">DOWNLOADS</a>
+                <a class="nav-btn" href="#">MORE <i class="fas fa-caret-down"></i></a>
+            </div>
+            <div class="nav-right"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+
+            <div class="server-info-container">
+                <img src="logo.png" alt="Jartex Network Logo" class="main-logo">
+                <div class="server-ip">
+                    <span class="click-text">CLICK TO COPY THE IP ADDRESS</span>
+                    <button id="copyIpBtn">
+                        <span>PLAY.JARTEXNETWORK.COM</span>
+                        <span class="player-count">541</span>
+                    </button>
+                </div>
+            </div>
+            <div class="play-now-box-contaion">
+                <div class="play-now-box">
+                    <p>Learn how to join our server and start playing in 60 seconds</p>
+                    <a href="#" class="play-now-btn">Play Now</a>
+                </div>
+                <div class="server-discord">
+                    <span class="click-text">CLICK TO JOIN</span>
+                    <a href="#" class="discord-btn">
+                        <span class="discord-count">2,938</span>
+                        <span><i class="fab fa-discord"></i> JOIN OUR DISCORD</span>
+                    </a>
+                </div>
+        </section>
+
+        <section class="updates-grid">
+            <div class="card">
+                <div class="card-top">
+                    <div class="date1">
+                        <p>23</p>
+                        <p>SEP</p>
+                    </div>
+                    <a href="#">Prison - Reset / September 26th 2025</a>
+                    <div class="card-top-title">
+                        <a href="#">JustThiemo</a>
+                        <span>.</span>
+                        <p>September 23, 2025</p>
+                    </div>
+                </div>
+                <img src="card1.png" width="" alt="Prison Reset">
+                <div class="card-content">
+                    <h3>PRISON RESET</h3>
+                    <p>JUMP IN | JARTEXNETWORK.COM</p>
+                    <span>POSTED SEPTEMBER 23, 2025</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.imgur.com/2pAYMAb.jpeg" alt="Factions Reset">
+                <div class="card-content">
+                    <h3>FACTIONS RESET</h3>
+                    <p>JUMP IN | JARTEXNETWORK.COM</p>
+                    <span>POSTED SEPTEMBER 8, 2025</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.imgur.com/uNfGXV8.jpeg" alt="Skyblock Dream Reset">
+                <div class="card-content">
+                    <h3>SKYBLOCK DREAM RESET</h3>
+                    <p>JUMP IN | JARTEXNETWORK.COM</p>
+                    <span>POSTED AUGUST 19, 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-post">
+            <div class="post-item">
+                <div class="post-date">
+                    <span class="day">23</span>
+                    <span class="month">SEP</span>
+                </div>
+                <div class="post-details">
+                    <h2 class="post-title">Prison - Reset | September 26th 2025</h2>
+                    <p class="post-meta">
+                        <i class="fas fa-user"></i> JustThiemo <i class="fas fa-calendar-alt"></i> September 23, 2025
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript Code
+        document.addEventListener('DOMContentLoaded', () => {
+            const copyIpBtn = document.getElementById('copyIpBtn');
+            const originalBtnTextSpan = copyIpBtn.querySelector('span:first-child');
+            const originalBtnText = originalBtnTextSpan.textContent;
+
+            copyIpBtn.addEventListener('click', () => {
+                const ipAddress = 'PLAY.JARTEXNETWORK.COM';
+
+                navigator.clipboard.writeText(ipAddress).then(() => {
+                    // Success feedback
+                    originalBtnTextSpan.textContent = 'COPIED!';
+
+                    // Revert back to original text after 2 seconds
+                    setTimeout(() => {
+                        originalBtnTextSpan.textContent = originalBtnText;
+                    }, 2000);
+
+                }).catch(err => {
+                    console.error('Failed to copy IP address: ', err);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
