@@ -202,10 +202,11 @@ main {
 
 .card {
     background-color: var(--bg-light);
-    border-radius: 2px;
+    border-radius: 3px;
     overflow: hidden;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: transform 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.075);
 }
 
 .card:hover {
@@ -215,23 +216,57 @@ main {
     display: flex;
     align-items: center;
     height: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.075);
 }
 .date1{
-    background-color: #2d2d3f;
-    padding: 18px;
-    margin: 0 20px;
+    background-color: #262634;;
+    padding: 12px;
+    margin: 5px 20px;
     border-radius: 15px;
     text-align: center;
 }
-.date1 h4, p{
-    font-size: 1.3rem;
+.date1 h4{
+    font-size: 1.8rem;
+    color: #feca0c;;
+}
+.date1 p{
+    color: #feca0c;;
+    font-weight: bold;
+}
+.card-top-title a{
+    text-decoration: none;
     color: #f7c12c;
+}
+.topLine1{
+    font-size: 1.4rem;
+}
+.top-title-secline{
+    display: flex;
+    margin-top: 10px;
+}
+.top-title-secline i{
+    color: #6d6d89 ;
+    margin: 0 5px;
+}
+.top-title-secline p{
+    font-size: .7ram;
+    color: #a0a0a0;
+}
+.top-title-secline p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.top-title-secline span{
+    margin: 0 10px;
 }
 
 .card img {
-    width: 100%;
+    width: 96%;
     height: auto;
     display: block;
+    margin-left: 20px;
+    border-radius: 4px;
+    margin-top: 15px;
 }
 
 .card-content {
