@@ -18,6 +18,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--bg-dark);
+    background-image: url(p9ySwW3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     color: var(--text-color);
     display: flex;
     flex-direction: column;
@@ -26,7 +29,6 @@ body {
 
 header {
     width: 100%;
-    background-color: #1e1e29;
     display: flex;
     justify-content: center;
 }
@@ -49,7 +51,7 @@ header {
     color: #f9b805;
     text-decoration: none;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 .nav-btn{
@@ -104,7 +106,7 @@ main {
 }
 
 .main-logo {
-    max-width: 500px;
+    max-width: 660px;
     width: 90%;
     margin: 10px;
 }
